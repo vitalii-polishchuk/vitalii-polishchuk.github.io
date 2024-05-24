@@ -1,10 +1,12 @@
 import './App.css'
 
 function App() {
+  const checkIsMobileOrTablet = (): boolean => /(android|iphone|ipad|mobile)/i.test(navigator.userAgent);
 
   return (
     <>
       <div>
+        <>Is mobile {checkIsMobileOrTablet()}</>
         <button onClick={async () => {
           console.log(navigator.canShare())
           try {
