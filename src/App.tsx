@@ -12,7 +12,8 @@ function App() {
           } catch (e) {
             console.log('Failed to share', e);
           }
-        }}>Share test</button>
+        }}>Share test1</button>
+        <></>
       </div>
     </>
   )
